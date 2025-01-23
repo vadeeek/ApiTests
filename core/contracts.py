@@ -21,3 +21,36 @@ RESOURCE_DATA_SCHEME = {
     },
     "requires" : ["id", "name", "year", "color", "pantone_value"]
 }
+
+SUCCESSFUL_REGISTERED_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "id" : {"type" : "number"},
+        "token" : {"type" : "string"}
+    },
+    "requires" : ["id", "token"]
+}
+
+UNSUCCESSFUL_REGISTERED_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "error" : {"type" : "string"}
+    },
+    "requires" : ["error"]
+}
+
+SUCCESSFUL_LOGIN_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "token" : {"type" : "string"}
+    },
+    "requires" : ["token"]
+}
+
+UNSUCCESSFUL_LOGIN_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "error" : {"type" : "string"}
+    },
+    "requires" : ["error"]
+}

@@ -38,6 +38,7 @@ UPDATED_USER_SCHEME = {
         "name" : {"type" : "string"},
         "job" : {"type" : "string"}
     }
+}
 
 SUCCESSFUL_REGISTERED_USER_SCHEME = {
     "type" : "object",
